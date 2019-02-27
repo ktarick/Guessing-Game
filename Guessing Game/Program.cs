@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Guessing_Game
 {
@@ -66,14 +62,9 @@ namespace Guessing_Game
                     Console.WriteLine("Congratulations you guessed Correctly.");
                     Restart();
                     Console.ReadKey();
-                }
-                /* If you fail and want to play again enter Y, if not enter N.
-                 * If Y start game again
-                 * If N break out of program.
-                */
+                }                
             }
         }
-
         public static void Restart()
         {
             Console.WriteLine("Would You Like To Play Again?"
@@ -88,11 +79,9 @@ namespace Guessing_Game
                 return;
             }
         }
-
         static void Main(string[] args)
         {
             Run();
-
         }
     }
 }
